@@ -11,7 +11,7 @@
     $curso_interesse = $_POST['interesse'];
     $escola = $_POST['escola'];
 
-    $sql = "INSERT INTO cadastro ('nome','email','celular','endereco','numero','cidade','ano_conclusao','curso_interesse','escola') VALUES ";
+    $sql = "INSERT INTO cadastro (`nome`,`email`,`celular`,`endereco`,`numero`,`cidade`,`ano_conclusao`,`curso_interesse`,`escola`) VALUES ";
     $sql .= "('$nome', '$email', '$celular', '$endereco', '$numero', '$cidade', '$ano_conclusao', '$curso_interesse', '$escola')";
     
     echo $sql . "<br>";
